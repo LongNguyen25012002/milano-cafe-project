@@ -24,6 +24,12 @@
     color: var(--colorWhite);
     border-radius: 999px;
     padding: 6px 28px;
+
+    @media (max-Width: 1024px) {
+           padding: 4px 18px;
+           font-size: 1.4rem;
+           height: 30px;
+    }
 }
 
 .outline{

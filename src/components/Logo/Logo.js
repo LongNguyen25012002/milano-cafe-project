@@ -1,28 +1,40 @@
-import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import config from '@/config';
 import styles from './Logo.module.scss';
 import classNames from 'classnames/bind';
 
-const Logo = ({children,to = config.routes.home ,href = false,className}) => {
-
+const Logo = ({
+    children,
+    to = config.routes.home,
+    href = false,
+    className = "",
+}) => {
     const cx = classNames.bind(styles);
     let Logo = 'span';
-    let props = {}; 
+    let props = {};
 
-    if(to){
-        Logo = Link
-        props.to = to
-    } else if(href){
-        Logo = 'a'
-        props.href = href
+    if (to) {
+        Logo = Link;
+        props.to = to;
+    } else if (href) {
+        Logo = 'a';
+        props.href = href;
     }
 
-  return (
-    <Logo {...props} className={cx('logo-wrapper')}>
-        {children}
-        <h1 className={cx('logo')}>Milano Cafe</h1>
-    </Logo>
-  )
+    return (
+        <Logo {...props} className={cx('logo-wrapper')}>
+            {children}
+            <h1 className={cx('logo')}>Milano Cafe</h1>
+        </Logo>
+    );
+};
+
+Logo.prototype = {
+  children : PropTypes.node.isRequired,
+  to: PropTypes.string,
+  href: PropTypes.string,
+  className : PropTypes.string
 }
 
-export default Logo
+export default Logo;

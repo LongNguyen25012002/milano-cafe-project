@@ -1,10 +1,6 @@
+import PropTypes from 'prop-types';
 import {useState , forwardRef} from 'react';
-// import styles from './Image.module.scss';
 import images from '@/assets/Images';
-
-// import classNames from 'classnames/bind';
-
-// const cx = classNames.bind(styles);
 
 const Image = ({src, alt , className = "",  fallBack: customFallBack = images.roket, ...props },ref) => {
 
@@ -20,10 +16,16 @@ const Image = ({src, alt , className = "",  fallBack: customFallBack = images.ro
           alt={alt}
           onError={handleError}
           ref={ref}
-        //   className={cx("")}
           {...props}
       />
   );
+}
+
+Image.prototype = {
+  src: PropTypes.string,
+  alt: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  onError: PropTypes.func
 }
 
 export default forwardRef(Image);

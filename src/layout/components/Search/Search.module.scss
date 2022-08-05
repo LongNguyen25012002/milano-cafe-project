@@ -14,6 +14,10 @@
     display: flex;
     align-items: center;
 
+    @media (max-Width: 1024px) {
+        display: none;
+    }
+
     input{
         width: inherit;
         height: inherit;

@@ -3,6 +3,10 @@
     width: 100%;
     height: var(--height-Header);
     border-bottom: 1px solid var(--colorRgbaMoss);
+
+    @media (max-Width: 1024px) {
+        height: var(--height-Header-small);
+    }
 }
 
 .inner-header {
@@ -17,6 +21,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+     @media (max-Width: 1024px) {
+        padding-right: 20px;
+        justify-content: flex-end;
+    }
 }
 
 .login-success {
@@ -33,7 +42,7 @@
         width: 36px;
         height: 36px;
         border-radius: 999px;
-        margin-left: 14px;
+        margin-left: 16px;
         cursor: pointer;
 
         img{
@@ -42,4 +51,8 @@
             border-radius: inherit;
         }
     }
+}
+
+.menu-icon{
+        color: var(--colorMoss);
 }

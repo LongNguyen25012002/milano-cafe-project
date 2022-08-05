@@ -62,3 +62,23 @@ export const CartIcon = ({ width = '2.8rem', height = '2.8rem', className }) => 
     );
 };
 
+export  const MenuIcon = ({ width = '2.8rem', height = '2.8rem', className }) => {
+    return (
+        <svg
+            className={className}
+            width={width}
+            height={height}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+            />
+        </svg>
+    );
+};
