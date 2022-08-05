@@ -1,2 +1,2 @@
 
-export {default} from './ImageCollection'
+export {default as ImageCollection} from './ImageCollection'
