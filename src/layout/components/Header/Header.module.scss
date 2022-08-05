@@ -1,0 +1,45 @@
+.header {
+    max-width: 100%;
+    width: 100%;
+    height: var(--height-Header);
+    border-bottom: 1px solid var(--colorRgbaMoss);
+}
+
+.inner-header {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.place-search-with-user {
+    flex: 1;
+    padding: 0 50px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-success {
+    display: flex;
+    align-items: center;
+
+    .cart-icon {
+        cursor: pointer;
+        color: var(--colorMoss);
+        opacity: 0.6;
+    }
+
+    .img-avatar{
+        width: 36px;
+        height: 36px;
+        border-radius: 999px;
+        margin-left: 14px;
+        cursor: pointer;
+
+        img{
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+        }
+    }
+}

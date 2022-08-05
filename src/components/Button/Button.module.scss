@@ -1,0 +1,38 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 36px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    user-select: none;
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.primary{
+    background-color: var(--colorPrimary);
+    color: var(--colorWhite);
+    border-radius: 999px;
+    padding: 6px 28px;
+}
+
+.outline{
+    border: 1px solid var(--colorPrimary);
+    background-color: var(--colorWhite);
+    color: var(--colorPrimary);
+}
+
+.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}

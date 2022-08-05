@@ -1,0 +1,26 @@
+
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--height-Header);
+    width: var(--width-logo-area);
+    border-right: 1px solid var(--colorRgbaMoss);
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+    @media (max-Width: 1024px) {
+        border-right: none;
+        width: fit-content;
+    }
+}
+
+.logo{
+    font-size: var(--logoFontSize);
+    text-decoration: none;
+    color: var(--colorMoss);
+    padding-left: 16px;
+}

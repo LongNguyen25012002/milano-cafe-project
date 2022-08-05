@@ -1,0 +1,43 @@
+
+.search-wrapper{
+    --search-wrapper-height: 36px;
+    --search-wrapper-with: 360px;
+
+    line-height: 1;
+
+    height: var(--search-wrapper-height);
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid var(--colorRgbaMoss);
+    max-width: var(--search-wrapper-with);
+
+    display: flex;
+    align-items: center;
+
+    input{
+        width: inherit;
+        height: inherit;
+        border-radius: inherit;
+        background-color: transparent;
+        padding: 0 15px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        caret-color: var(--colorPrimary);
+        color: var(--colorMoss);
+        text-transform: capitalize;
+    }
+
+    ::placeholder{
+        font-size: 1.4rem;
+        color: var(--colorMoss);
+    }
+
+    .icon-search{
+        padding-right: 10px;
+        color: var(--colorMoss);
+        cursor: pointer;
+        opacity: 0.6;
+    }
+}
