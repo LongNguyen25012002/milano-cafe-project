@@ -7,8 +7,8 @@ const initialState = {
 
 export const getProducts = createAsyncThunk(
     'productsFetch/getProducts',
-     async (url) => {
-        return await fetch(url)
+     async (url, option) => {
+        return await fetch(url, {option})
         .then(res => res.json())
         .then(data => data)
     }
@@ -18,7 +18,15 @@ export const productsSlice = createSlice({
     name: 'products slice',
     initialState,
     reducers: {
-      
+       searchProducts (state,action) {
+            console.log(action.payload)
+           let resultPayload = action.payload;
+           let result = state.productsData.filter(menu => {
+               return menu.name.includes(resultPayload);
+           })
+
+           state.productsData = result
+       },
     },
     extraReducers: builder => {
         builder
@@ -32,4 +40,5 @@ export const productsSlice = createSlice({
     }
 });
 
+export const {searchProducts,getMenuProducts} = productsSlice.actions;
 export default productsSlice.reducer

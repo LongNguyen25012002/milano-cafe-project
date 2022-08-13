@@ -1,12 +1,22 @@
 import styles from './Search.module.scss';
 import classNames from 'classnames/bind';
-import { useRef, useState } from 'react';
-import { RemoveIcon, SearchIcon } from '@/components/Icons';
+import { useEffect, useRef, useState } from 'react';
+import { SearchIcon } from '@/components/Icons';
+import { searchProducts } from '@/features/products-slice';
+import { useDispatch } from 'react-redux';
+import { useDebonce } from '@/hook';
 
 const cx = classNames.bind(styles);
 
 const Search = () => {
+    let dispatch = useDispatch();
+
     const [searchValue, setSearchValue] = useState('');
+    const { searchValueResult } = useDebonce(searchValue, 500);
+
+    useEffect(() => {
+        dispatch(searchProducts(searchValueResult));
+    }, [searchValueResult, dispatch]);
 
     const inputRef = useRef();
 
@@ -30,9 +40,9 @@ const Search = () => {
                 ref={inputRef}
                 onChange={(e) => handleGetValueSearch(e)}
             ></input>
-                <div onClick={handleClickFocus}>
-                    <SearchIcon className={cx('icon-search')} />
-                </div>
+            <div onClick={handleClickFocus}>
+                <SearchIcon className={cx('icon-search')} />
+            </div>
         </div>
     );
 };

@@ -1,36 +1,34 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux/es/exports';
+import { useEffect, useState } from 'react';
 import { getProducts } from '@/features/products-slice';
+import { useSelector, useDispatch } from 'react-redux';
+
 
 import styles from './Home.module.scss';
 import classNames from 'classnames/bind';
 
+
 const cx = classNames.bind(styles);
 
 const Home = () => {
-    const dispatch = useDispatch();
 
+    const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getProducts('https://faker-server-j.herokuapp.com/api/menu'));
     }, [dispatch]);
-
+    
     const productsData = useSelector((state) => state.products.productsData);
+    console.log(productsData)
 
     return (
         <div className={cx('wrapper-home')}>
             <div className={cx('products-wrapper')}>
                 {
-                    productsData.map(menu => {
-                        return (
-                            <div className={cx('card-single')} key={Math.random() + 1}>
-                                <img src={menu.image} alt="a"/>
-                                <div className={cx('details')}>
-                                    <h3>{menu.name}</h3>
-                                    <p>{menu.price}</p>
-                                </div>
-                            </div>
-                        );
-                    })
+                    // products.map(menu => {
+
+                    //     return (
+                    //         <div></div>
+                    //     )
+                    // })
                 }
             </div>
         </div>
