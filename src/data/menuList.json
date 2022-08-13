@@ -1,0 +1,110 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "type": "cà phê , nóng",
+            "name" : "cà phê đen nóng đá",
+            "price": 10000,
+            "image": "https://i0.wp.com/caphekhoanbetong.com/wp-content/uploads/2021/09/den-nong-ca-phe-nguyen-vi-thom-ngon-dam-sau-4.jpg?resize=800%2C495&ssl=1"
+        },
+         {
+            "id": 2,
+            "type": "cà phê , đá xay",
+            "name" : "cà phê đá xay pha kem",
+            "price": 20000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+         {
+            "id": 3,
+            "type": "cà phê , đá xay",
+            "name" : "cà phê xay chocolate",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+         {
+            "id": 4,
+            "type": "ca phê xay hương chuối",
+            "name" : "cà phê xay chocolate",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+         {
+            "id": 5,
+            "type": "cà phê , đá xay",
+            "name" : "cà phê xay chocolate",
+            "price": 20000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 6,
+            "type": "nước ép",
+            "name" : "cà phê xay chocolate",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 7,
+            "type": "nước ép",
+            "name" : "cam ép",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 8,
+            "type": "nước ép",
+            "name" : "bưởi ép",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 9,
+            "type": "nước ép",
+            "name" : "cốc ép",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 10,
+            "type": "nước ép",
+            "name" : "cà rốt ép",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        }
+        ,
+        {
+            "id": 10,
+            "type": "trà sữa",
+            "name" : "trà sữa việt quất",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 10,
+            "type": "trà sữa",
+            "name" : "trà sữa truyền thống",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 10,
+            "type": "trà sữa",
+            "name" : "trà sữa vị dâu tây",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 10,
+            "type": "trà sữa",
+            "name" : "trà sữa thập cẩm",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        },
+        {
+            "id": 10,
+            "type": "trà sữa",
+            "name" : "trà sữa matcha",
+            "price": 25000,
+            "image": "https://cdn.beptruong.edu.vn/wp-content/uploads/2019/02/cach-lam-do-uong-da-xay.jpg"
+        }
+    ]
+}

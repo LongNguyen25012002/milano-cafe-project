@@ -3,6 +3,12 @@
     width: 100%;
     height: var(--height-Header);
     border-bottom: 1px solid var(--colorRgbaMoss);
+    box-shadow: 0 2px 4px var(--colorBoxShadow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: var(--colorWhite);
 
     @media (max-Width: 1024px) {
         height: var(--height-Header-small);

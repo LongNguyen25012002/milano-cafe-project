@@ -14,7 +14,7 @@ let ListMenu = [
     {
         type: 'Cafe máy (cafe Italia)',
         iconImg: images.coffee,
-        path: '/category/cafe',
+        path: '/category/cà-phê',
     },
     {
         type: 'Nước ép',
@@ -74,6 +74,7 @@ const SideNavBar = () => {
 
     let {width} = useWindowDimensions()
     let isCloseSideBar = width > 1023;
+
     return (
         isCloseSideBar ? (
             <div className={cx('wrapper-siderBar')}>

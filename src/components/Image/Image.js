@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import {useState , forwardRef} from 'react';
 import images from '@/assets/Images';
 
-const Image = ({src, alt , className = "",  fallBack: customFallBack = images.roket, ...props },ref) => {
+const Image = ({src, alt , className = "",  fallBack: customFallBack = images.noImage, ...props },ref) => {
 
     const [fallback,setFallback] = useState('');
 
@@ -16,6 +16,7 @@ const Image = ({src, alt , className = "",  fallBack: customFallBack = images.ro
           alt={alt}
           onError={handleError}
           ref={ref}
+          className={className}
           {...props}
       />
   );

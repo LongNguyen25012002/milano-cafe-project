@@ -14,7 +14,7 @@
     --colorSyntax: #171010;
     --colorMoss: #2C3639;
     --colorRgbaMoss: #42525735;
-    // --colorRgbaMoss: #2c363947; 
+    --colorBoxShadow: rgba(174, 170, 188, 0.14);
 
     --height-Header : 64px;
     --padding-Header: 0 70px;
@@ -24,6 +24,7 @@
     --logoFontSize: 30px;
 
     --width-logo-area: 320px;
+    --width-navbar-area: 460px;
 }
 
 html{
@@ -43,6 +44,10 @@ body{
 
 a{
     text-decoration: none;
+}
+
+a.active{
+    color: var(--colorPrimary) !important;
 }
 
 button,input,textarea{

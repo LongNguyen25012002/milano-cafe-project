@@ -2,9 +2,10 @@
 const routes = {
     home: '/',
     blog: '/blog',
-    productDetails: '/product/@:slug',
+    productDetails: '/product',
     imageCollection: '/image-collection',
-    login: '/login'
+    login: '/login',
+    category: '/category/:slug'
 }
 
 export default routes
