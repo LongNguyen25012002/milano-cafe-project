@@ -18,15 +18,6 @@ export const productsSlice = createSlice({
     name: 'products slice',
     initialState,
     reducers: {
-       searchProducts (state,action) {
-            console.log(action.payload)
-           let resultPayload = action.payload;
-           let result = state.productsData.filter(menu => {
-               return menu.name.includes(resultPayload);
-           })
-
-           state.productsData = result
-       },
     },
     extraReducers: builder => {
         builder
@@ -40,5 +31,5 @@ export const productsSlice = createSlice({
     }
 });
 
-export const {searchProducts,getMenuProducts} = productsSlice.actions;
+export const {getMenuProducts} = productsSlice.actions;
 export default productsSlice.reducer

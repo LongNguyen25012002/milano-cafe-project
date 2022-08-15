@@ -2,21 +2,33 @@ import styles from './Search.module.scss';
 import classNames from 'classnames/bind';
 import { useEffect, useRef, useState } from 'react';
 import { SearchIcon } from '@/components/Icons';
-import { searchProducts } from '@/features/products-slice';
+import { getProducts, searchProducts } from '@/features/products-slice';
 import { useDispatch } from 'react-redux';
 import { useDebonce } from '@/hook';
 
 const cx = classNames.bind(styles);
 
 const Search = () => {
+    
     let dispatch = useDispatch();
-
     const [searchValue, setSearchValue] = useState('');
     const { searchValueResult } = useDebonce(searchValue, 500);
 
     useEffect(() => {
-        dispatch(searchProducts(searchValueResult));
-    }, [searchValueResult, dispatch]);
+        if(searchValueResult === "" || null){
+            dispatch(
+                getProducts('https://faker-server-j.herokuapp.com/api/menu'),
+            );
+        } else {
+            dispatch(
+                getProducts(
+                    `https://faker-server-j.herokuapp.com/api/menu?q=${encodeURI(
+                        searchValueResult,
+                    )}`,
+                ),
+            );
+        }
+    },[searchValueResult,dispatch])
 
     const inputRef = useRef();
 

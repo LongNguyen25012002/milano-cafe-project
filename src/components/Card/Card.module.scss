@@ -1,0 +1,25 @@
+
+.cardSingle{
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 24px;
+    cursor: pointer;
+
+    .card-single-img{
+        width: 100%;
+    }
+
+    .details-card{
+        position: absolute;
+        bottom: 0;
+        background-color: rgb(243, 226, 149);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}

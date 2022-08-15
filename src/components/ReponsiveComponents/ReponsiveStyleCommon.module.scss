@@ -1,0 +1,17 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col{
+    padding-left: 12px;
+    padding-right: 12px; 
+    width: 100%;
+}
+
+.col-5{
+    flex: 0 0 25%;
+}
